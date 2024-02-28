@@ -1,0 +1,28 @@
+{
+	"name": "fileName",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "olympicDatalakesink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "fileName.csv",
+				"fileSystem": "tokyoolympicdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Athletes.csv",
+				"type": "String"
+			}
+		]
+	}
+}
